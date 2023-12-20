@@ -1,0 +1,10 @@
+version: 0.0
+os: linux
+files:
+ - source: /codebuild/output/artifacts/
+   destination: /mnt/servers/apache-tomcat-9.0.84/webapps/
+hooks:
+  ApplicationStart:
+    - location: /scripts/startup.sh
+      timeout: 300
+    
