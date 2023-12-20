@@ -1,7 +1,7 @@
 version: 0.0
 os: linux
 files:
- - source: jenkins.war
+ - source: /jenkins-war-folder
    destination: /mnt/servers/apache-tomcat-9.0.84/webapps/
 hooks:
   ApplicationStart:
