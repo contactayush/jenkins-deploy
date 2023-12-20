@@ -1,7 +1,7 @@
 version: 0.0
 os: linux
 files:
- - source: /codebuild/output/artifacts/
+ - source: /
    destination: /mnt/servers/apache-tomcat-9.0.84/webapps/
 hooks:
   ApplicationStart:
